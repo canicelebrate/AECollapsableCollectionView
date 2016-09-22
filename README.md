@@ -5,7 +5,7 @@ This library is inspired by the another similar project APLExpandableCollectionV
 
 AECollapsableCollectionView defined the toggle method for a spefic section, so that the developers can trigger the toggle action conventiently. The section can be expanded by tapping the button in the header view. You can check detail in the sample project.
 
-Some of codes of the project come from APLExpandableCollectionView. Many thanks for the code sharing from apploft.
+Some codes of the project come from APLExpandableCollectionView. Many thanks for the code sharing from apploft.
   
 
 ## Implementation
