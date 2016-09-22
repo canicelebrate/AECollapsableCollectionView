@@ -2,8 +2,8 @@
 //  AECollapsableCollectionView.m
 //  AECollapsableCollectionViewDemo
 //
-//  Created by WangLin on 16/9/22.
-//  Copyright © 2016年 AmberEase Co.,ltd. All rights reserved.
+//  Created by William Wang on 16/9/22.
+//  Copyright © 2016 AmberEase Co.,ltd. All rights reserved.
 //
 
 #import "AECollapsableCollectionView.h"
@@ -97,16 +97,19 @@
             if ((sectionTop + offset + headerHeight) <= (self.contentOffset.y + boundsHeight)) {
                 //展开后，如果section头位置不动，当前视窗可以容纳所有新内容
                 //什么也不做
-                //[self setContentOffset:CGPointMake(0., sectionTop) animated:YES];
+                //Current window can accomodate the content of expanded section without scrolling the section head
+                //no need to do anything
                 
             }
             else{
                 if((headerHeight + offset) > boundsHeight){
                     //展开后新的section的内容的高度，超过整个窗体的大小,将当前的section头置顶
+                    //The content size of the expanded section exceeded the size of the bounds of the UICollectionView, we need to have the section head pin to top edge of the UICollectionView
                     [self setContentOffset:CGPointMake(0,sectionTop) animated:YES];
                 }
                 else{
                     //展开后，需要将内容向上滚动以显示所有新的内容
+                    //Otherwise, Have the bottom edge of the section pin to the bottom edge of the UICollectionView's bounds
                     CGFloat offsetMovement =  (sectionTop + headerHeight + offset) - (self.contentOffset.y + boundsHeight);
                     [self setContentOffset:CGPointMake(0, self.contentOffset.y + offsetMovement)];
                     
@@ -114,14 +117,7 @@
             }
             
             
-        //        [self setContentOffset:CGPointMake(0., self.contentOffset.y + offset) animated:YES];
-        
-            
-        
-            
-            
             if ([self.delegate respondsToSelector:@selector(collectionView:didExpandItemAtSection:)]) {
-                //[self didCollapseItemsForSectionIndexPaths:expandedSectionIndexPaths];
                 [self.delegate collectionView:self didExpandItemAtSection:section];
             }
         } else {
@@ -171,18 +167,8 @@
     }
 }
 
-/*
-- (void)didCollapseItemsForSectionIndexPaths:(NSArray*)sectionIndexPaths {
-    for (NSIndexPath* sectionIndexPath in sectionIndexPaths) {
-        if ([self.delegate respondsToSelector:@selector(collectionView:didCollapseItemAtIndexPath:)]) {
-            [self.delegate collectionView:self didCollapseItemAtIndexPath:sectionIndexPath];
-        }
-    }
-}
-*/
 
 
-/**/
 #pragma mark - Override Methods
 - (id<UICollectionViewDataSource>)dataSource {
     return [super dataSource];
@@ -192,9 +178,7 @@
     _myDataSource = dataSource;
     [super setDataSource:self];
 }
-//*/
 
-/**/
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -213,6 +197,5 @@
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     return [self.myDataSource respondsToSelector:@selector(collectionView:viewForSupplementaryElementOfKind:atIndexPath:)] ? [self.myDataSource collectionView:self viewForSupplementaryElementOfKind:kind atIndexPath:indexPath] : nil;
 }
-//*/
 
 @end

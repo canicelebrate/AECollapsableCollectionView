@@ -2,8 +2,8 @@
 //  AECollapsableCollectionView.h
 //  AECollapsableCollectionViewDemo
 //
-//  Created by WangLin on 16/9/22.
-//  Copyright © 2016年 AmberEase Co.,Ltd. All rights reserved.
+//  Created by William Wang on 16/9/22.
+//  Copyright © 2016 AmberEase Co.,Ltd. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -13,10 +13,10 @@
 
 @optional
 
-/** Tells the delegate that the item at the specified index path was expanded. */
+/** Tells the delegate that the section was expanded. */
 - (void)collectionView:(UICollectionView *)collectionView didExpandItemAtSection:(NSInteger)indexPath;
 
-/** Tells the delegate that the item at the specified index path was collapsed. */
+/** Tells the delegate that the item at the section was collapsed. */
 - (void)collectionView:(UICollectionView *)collectionView didCollapseItemAtSection:(NSInteger)indexPath;
 
 @end
