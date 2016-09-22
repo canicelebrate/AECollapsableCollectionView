@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		C22196EA1D93BCD400AA10E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C22196E91D93BCD400AA10E2 /* main.m */; };
 		C22196ED1D93BCD400AA10E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C22196EC1D93BCD400AA10E2 /* AppDelegate.m */; };
-		C22196F01D93BCD400AA10E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C22196EF1D93BCD400AA10E2 /* ViewController.m */; };
 		C22196F31D93BCD400AA10E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22196F11D93BCD400AA10E2 /* Main.storyboard */; };
 		C22196F51D93BCD400AA10E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22196F41D93BCD400AA10E2 /* Assets.xcassets */; };
 		C22196F81D93BCD400AA10E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22196F61D93BCD400AA10E2 /* LaunchScreen.storyboard */; };
 		C22197031D93BCD500AA10E2 /* AECollapsableCollectionViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C22197021D93BCD500AA10E2 /* AECollapsableCollectionViewDemoTests.m */; };
 		C221970E1D93BCD500AA10E2 /* AECollapsableCollectionViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C221970D1D93BCD500AA10E2 /* AECollapsableCollectionViewDemoUITests.m */; };
+		C221971E1D93C38B00AA10E2 /* AECollapsableCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C221971D1D93C38B00AA10E2 /* AECollapsableCollectionView.m */; };
+		C22197251D93C39500AA10E2 /* AECollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C22197201D93C39500AA10E2 /* AECollectionReusableView.m */; };
+		C22197261D93C39500AA10E2 /* AECollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C22197221D93C39500AA10E2 /* AECollectionViewCell.m */; };
+		C22197271D93C39500AA10E2 /* AEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C22197241D93C39500AA10E2 /* AEViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +42,6 @@
 		C22196E91D93BCD400AA10E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C22196EB1D93BCD400AA10E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C22196EC1D93BCD400AA10E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C22196EE1D93BCD400AA10E2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C22196EF1D93BCD400AA10E2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C22196F21D93BCD400AA10E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C22196F41D93BCD400AA10E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C22196F71D93BCD400AA10E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,14 @@
 		C22197091D93BCD500AA10E2 /* AECollapsableCollectionViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AECollapsableCollectionViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C221970D1D93BCD500AA10E2 /* AECollapsableCollectionViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AECollapsableCollectionViewDemoUITests.m; sourceTree = "<group>"; };
 		C221970F1D93BCD500AA10E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C221971C1D93C38B00AA10E2 /* AECollapsableCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AECollapsableCollectionView.h; sourceTree = "<group>"; };
+		C221971D1D93C38B00AA10E2 /* AECollapsableCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AECollapsableCollectionView.m; sourceTree = "<group>"; };
+		C221971F1D93C39500AA10E2 /* AECollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AECollectionReusableView.h; sourceTree = "<group>"; };
+		C22197201D93C39500AA10E2 /* AECollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AECollectionReusableView.m; sourceTree = "<group>"; };
+		C22197211D93C39500AA10E2 /* AECollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AECollectionViewCell.h; sourceTree = "<group>"; };
+		C22197221D93C39500AA10E2 /* AECollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AECollectionViewCell.m; sourceTree = "<group>"; };
+		C22197231D93C39500AA10E2 /* AEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEViewController.h; sourceTree = "<group>"; };
+		C22197241D93C39500AA10E2 /* AEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 		C22196DC1D93BCD400AA10E2 = {
 			isa = PBXGroup;
 			children = (
+				C221971B1D93C38B00AA10E2 /* Classes */,
 				C22196E71D93BCD400AA10E2 /* AECollapsableCollectionViewDemo */,
 				C22197011D93BCD500AA10E2 /* AECollapsableCollectionViewDemoTests */,
 				C221970C1D93BCD500AA10E2 /* AECollapsableCollectionViewDemoUITests */,
@@ -101,10 +111,14 @@
 		C22196E71D93BCD400AA10E2 /* AECollapsableCollectionViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C221971F1D93C39500AA10E2 /* AECollectionReusableView.h */,
+				C22197201D93C39500AA10E2 /* AECollectionReusableView.m */,
+				C22197211D93C39500AA10E2 /* AECollectionViewCell.h */,
+				C22197221D93C39500AA10E2 /* AECollectionViewCell.m */,
+				C22197231D93C39500AA10E2 /* AEViewController.h */,
+				C22197241D93C39500AA10E2 /* AEViewController.m */,
 				C22196EB1D93BCD400AA10E2 /* AppDelegate.h */,
 				C22196EC1D93BCD400AA10E2 /* AppDelegate.m */,
-				C22196EE1D93BCD400AA10E2 /* ViewController.h */,
-				C22196EF1D93BCD400AA10E2 /* ViewController.m */,
 				C22196F11D93BCD400AA10E2 /* Main.storyboard */,
 				C22196F41D93BCD400AA10E2 /* Assets.xcassets */,
 				C22196F61D93BCD400AA10E2 /* LaunchScreen.storyboard */,
@@ -138,6 +152,15 @@
 				C221970F1D93BCD500AA10E2 /* Info.plist */,
 			);
 			path = AECollapsableCollectionViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		C221971B1D93C38B00AA10E2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C221971C1D93C38B00AA10E2 /* AECollapsableCollectionView.h */,
+				C221971D1D93C38B00AA10E2 /* AECollapsableCollectionView.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C22196F01D93BCD400AA10E2 /* ViewController.m in Sources */,
+				C22197261D93C39500AA10E2 /* AECollectionViewCell.m in Sources */,
+				C22197271D93C39500AA10E2 /* AEViewController.m in Sources */,
 				C22196ED1D93BCD400AA10E2 /* AppDelegate.m in Sources */,
 				C22196EA1D93BCD400AA10E2 /* main.m in Sources */,
+				C22197251D93C39500AA10E2 /* AECollectionReusableView.m in Sources */,
+				C221971E1D93C38B00AA10E2 /* AECollapsableCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

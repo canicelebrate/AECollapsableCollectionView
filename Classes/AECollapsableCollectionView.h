@@ -1,6 +1,6 @@
 //
 //  AECollapsableCollectionView.h
-//  APLExpandableCollectionViewDemo
+//  AECollapsableCollectionViewDemo
 //
 //  Created by WangLin on 16/9/22.
 //  Copyright © 2016年 AmberEase Co.,Ltd. All rights reserved.
