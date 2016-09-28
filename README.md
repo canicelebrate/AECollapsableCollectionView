@@ -7,6 +7,8 @@ AECollapsableCollectionView defined the toggle method for a spefic section, so t
 
 Some codes of the project come from APLExpandableCollectionView. Many thanks for the code sharing from apploft.
   
+## Screen shot
+![](https://github.com/canicelebrate/AECollapsableCollectionView/blob/master/AECollapsableCollectionView.gif?raw=true)
 
 ## Implementation
   Subclassed the UICollectionView and utilize its performBatchUpdates, insertItemsAtIndexPaths and deleteItemsAtIndexPaths to implement the collapse and expand behavor of the collection section.
